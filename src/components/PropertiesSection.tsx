@@ -6,54 +6,54 @@ export function PropertiesSection() {
   const acidProperties = [
     {
       icon: Eye,
-      title: "Taste",
-      description: "Sour taste (like lemons or vinegar)",
-      note: "Never taste chemicals in a lab!"
+      title: "맛",
+      description: "신맛 (레몬이나 식초와 같은)",
+      note: "실험실에서 화학물질을 맛보지 마세요!"
     },
     {
       icon: Droplets,
-      title: "Litmus Paper",
-      description: "Turn blue litmus paper red",
-      note: "Classic acid test"
+      title: "리트머스 지시지",
+      description: "파란색 리트머스 지시지를 빨간색으로 변화",
+      note: "산의 전형적인 반응"
     },
     {
       icon: Thermometer,
-      title: "React with Metals",
-      description: "React with zinc, magnesium to produce hydrogen gas",
+      title: "금속과의 반응",
+      description: "아연, 마그네슘과 반응하여 수소 기체 생성",
       note: "Zn + 2HCl → ZnCl₂ + H₂"
     },
     {
       icon: AlertTriangle,
-      title: "Corrosive",
-      description: "Can cause burns and damage materials",
-      note: "Always handle with care"
+      title: "부식성",
+      description: "화상을 입히고 물질을 손상시킬 수 있음",
+      note: "항상 주의해서 다루세요"
     }
   ];
 
   const baseProperties = [
     {
       icon: Eye,
-      title: "Feel",
-      description: "Slippery or soapy feeling on skin",
-      note: "Due to breaking down oils"
+      title: "촉감",
+      description: "피부에 미끄러운 느낌이나 비누 같은 느낌",
+      note: "기름을 분해하기 때문"
     },
     {
       icon: Droplets,
-      title: "Litmus Paper",
-      description: "Turn red litmus paper blue",
-      note: "Classic base test"
+      title: "리트머스 지시지",
+      description: "빨간색 리트머스 지시지를 파란색으로 변화",
+      note: "염기의 전형적인 반응"
     },
     {
       icon: Thermometer,
-      title: "React with Acids",
-      description: "Neutralize acids to form salt and water",
-      note: "Acid + Base → Salt + Water"
+      title: "산과의 반응",
+      description: "산을 중화하여 염과 물을 생성",
+      note: "산 + 염기 → 염 + 물"
     },
     {
       icon: AlertTriangle,
-      title: "Caustic",
-      description: "Strong bases can cause severe burns",
-      note: "Handle with extreme caution"
+      title: "가성",
+      description: "강한 염기는 심각한 화상을 입힐 수 있음",
+      note: "극도로 조심해서 다루세요"
     }
   ];
 
@@ -62,10 +62,10 @@ export function PropertiesSection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            Common Properties Explained
+            공통 성질 해설
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Understanding why acids and bases behave the way they do through their molecular structure and ion behavior
+            분자 구조와 이온 거동을 통해 산과 염기가 왜 그런 방식으로 행동하는지 이해하기
           </p>
         </div>
 
@@ -73,8 +73,8 @@ export function PropertiesSection() {
           {/* Acid Properties */}
           <div>
             <div className="flex items-center mb-8">
-              <h3 className="text-3xl font-bold text-foreground">Acid Properties</h3>
-              <Badge className="ml-3 bg-acid text-white">H⁺ Rich</Badge>
+              <h3 className="text-3xl font-bold text-foreground">산의 성질</h3>
+              <Badge className="ml-3 bg-acid text-white">H⁺ 풍부</Badge>
             </div>
             
             <div className="space-y-6">
@@ -104,8 +104,8 @@ export function PropertiesSection() {
           {/* Base Properties */}
           <div>
             <div className="flex items-center mb-8">
-              <h3 className="text-3xl font-bold text-foreground">Base Properties</h3>
-              <Badge className="ml-3 bg-base text-white">OH⁻ Rich</Badge>
+              <h3 className="text-3xl font-bold text-foreground">염기의 성질</h3>
+              <Badge className="ml-3 bg-base text-white">OH⁻ 풍부</Badge>
             </div>
             
             <div className="space-y-6">
@@ -136,23 +136,23 @@ export function PropertiesSection() {
         {/* Why These Properties Exist */}
         <Card className="mt-16 p-8 shadow-medium bg-gradient-card">
           <h3 className="text-2xl font-bold text-card-foreground mb-6 text-center">
-            Why Do These Properties Exist?
+            이러한 성질이 나타나는 이유는?
           </h3>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <h4 className="text-lg font-semibold text-card-foreground flex items-center">
                 <Droplets className="h-5 w-5 text-acid mr-2" />
-                Acid Behavior
+                산의 거동
               </h4>
               <p className="text-muted-foreground leading-relaxed">
-                Acids release H⁺ ions in water. These hydrogen ions are responsible for the sour taste 
-                and ability to react with metals. The concentration of H⁺ ions determines the strength 
-                of the acid and its corrosive properties.
+                산은 물에서 H⁺ 이온을 방출합니다. 이 수소 이온들이 신맛과 
+                금속과 반응하는 능력을 담당합니다. H⁺ 이온의 농도가 산의 세기와 
+                부식성을 결정합니다.
               </p>
               <div className="bg-acid/10 p-4 rounded-lg">
                 <p className="text-acid font-medium text-sm">
-                  HCl → H⁺ + Cl⁻ (in water)
+                  HCl → H⁺ + Cl⁻ (물에서)
                 </p>
               </div>
             </div>
@@ -160,16 +160,16 @@ export function PropertiesSection() {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold text-card-foreground flex items-center">
                 <Droplets className="h-5 w-5 text-base mr-2" />
-                Base Behavior
+                염기의 거동
               </h4>
               <p className="text-muted-foreground leading-relaxed">
-                Bases release OH⁻ ions or accept H⁺ ions. The OH⁻ ions react with oils on skin, 
-                creating a slippery feeling. This same property makes them effective cleaners 
-                and gives them their ability to neutralize acids.
+                염기는 OH⁻ 이온을 방출하거나 H⁺ 이온을 받습니다. OH⁻ 이온은 피부의 
+                기름과 반응하여 미끄러운 느낌을 만듭니다. 이 같은 성질로 효과적인 세제가 
+                되고 산을 중화하는 능력을 갖게 됩니다.
               </p>
               <div className="bg-base/10 p-4 rounded-lg">
                 <p className="text-base font-medium text-sm">
-                  NaOH → Na⁺ + OH⁻ (in water)
+                  NaOH → Na⁺ + OH⁻ (물에서)
                 </p>
               </div>
             </div>
