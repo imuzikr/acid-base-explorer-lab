@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Zap, Battery, CircuitBoard, Lightbulb } from "lucide-react";
+import ionConductivityImage from "@/assets/ion-conductivity.png";
 
 export function ConductivitySection() {
   return (
@@ -25,6 +26,24 @@ export function ConductivitySection() {
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               물에 녹을 때, 산과 염기는 모두 전류를 흘릴 수 있는 용액을 만듭니다. 
               이는 전하를 띤 입자인 이온들이 생성되어 움직이며 전기 전하를 운반하기 때문입니다.
+            </p>
+          </div>
+        </Card>
+
+        {/* Ion Movement Diagram */}
+        <Card className="mb-12 p-8 shadow-medium">
+          <h3 className="text-2xl font-bold text-card-foreground mb-6 text-center">
+            수용액 속 이온의 움직임과 전기 전도성
+          </h3>
+          <div className="text-center mb-6">
+            <img 
+              src={ionConductivityImage} 
+              alt="수용액에서 이온의 해리와 전기 전도성 원리를 보여주는 다이어그램" 
+              className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
+            />
+            <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">
+              산과 염기가 물에 녹으면 양이온(+)과 음이온(-)으로 해리됩니다. 
+              전기장이 가해지면 양이온은 음극으로, 음이온은 양극으로 이동하여 전류가 흐르게 됩니다.
             </p>
           </div>
         </Card>
