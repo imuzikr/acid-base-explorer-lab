@@ -3,7 +3,7 @@ import { TestTube, Zap, BookOpen } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen bg-pink-100 flex items-center justify-center p-6">
+    <section className="min-h-screen bg-blue-400 flex items-center justify-center p-6">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8">
           <TestTube className="h-16 w-16 mx-auto text-primary-foreground mb-4" />
