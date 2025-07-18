@@ -107,6 +107,7 @@ export function DefinitionsSection() {
                 className={`h-12 flex items-center justify-center text-white font-bold rounded ${
                   i < 7 ? 'bg-acid' : i === 7 ? 'bg-muted' : 'bg-base'
                 }`}
+                style={i < 7 || i > 7 ? { width: '50%' } : {}}
               >
                 {i}
               </div>
